@@ -187,6 +187,11 @@ body {
     width: 100%;
 }
 
+.hoabuddy_images img {
+    box-shadow: 10px 10px 10px rgb(189, 189, 189);
+    border-radius: 8px;
+}
+
 .links {
     display: flex;
     align-items: center;
@@ -490,8 +495,8 @@ body {
         position: absolute;
         display: block;
         top: 50%;
-        left: 45%;
-        width: 42%;
+        left: 50%;
+        width: 54%;
         background-color: white;
         padding: 0.5rem 1rem;
     }
@@ -521,11 +526,26 @@ body {
 
     .project_images > img:nth-child(2) {
         left: 23%;
-        top: 25%;
+        top: 40%;
         width: 434px;
     }
 
     .project_images_single img {
         width: 434px;
     }
+}
+
+@media (min-width: 640px) {
+    .hoabuddy_images > img:nth-child(1) { left: calc(-10% + 20px); }
+    .hoabuddy_images > img:nth-child(2) { left: calc(33% + 20px); }
+}
+
+@media (min-width: 1024px) {
+    .hoabuddy_images > img:nth-child(1) { left: calc(-10% + 20px); }
+    .hoabuddy_images > img:nth-child(2) { left: calc(28% + 20px); }
+}
+
+@media (min-width: 1200px) {
+    .hoabuddy_images > img:nth-child(1) { left: calc(-15% + 20px); }
+    .hoabuddy_images > img:nth-child(2) { left: calc(27% + 20px); }
 }
